@@ -1,18 +1,13 @@
-import { Formik, Field, Form } from "formik";
+import React, { Component } from "react";
+import { Formik } from 'formik';
 
-export const App = () => {
+
+export class App extends Component {
+  state = {
+  contacts: [],
+  filter: ''
+}
   return (
-    <div
-      style={{
-        height: '100vh',
-        display: 'flex',
-        justifyContent: 'center',
-        alignItems: 'center',
-        fontSize: 40,
-        color: '#010101'
-      }}
-    >
-      React homework template
-    </div>
+    
   );
 };
